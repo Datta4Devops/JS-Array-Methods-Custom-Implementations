@@ -23,5 +23,8 @@ function customGetEvenNoSum(array, $initialvalue = 0)
     }
     return result;
 }
-
-console.log(customGetEvenNoSum(numbers,10));
+function customReduce(myfunction, array ){
+    let result = myfunction(array,10);
+    return result;
+  }
+console.log(customReduce(customGetEvenNoSum,numbers));
