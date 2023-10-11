@@ -24,5 +24,11 @@ function customGetFullName(array)
     }
 }
 
-customGetFullName(nameArray);
+// customGetFullName(nameArray);
+function customForEach(myfunction, array ){
+    myfunction(array);
+    return ;
+  }
+customForEach(customGetFullName,nameArray);
+
 console.log(fullName);
