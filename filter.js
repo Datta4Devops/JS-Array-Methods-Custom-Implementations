@@ -39,5 +39,8 @@ function eligibleToVote(array)
     }
     return result;
 }
-
-console.log(eligibleToVote(persons));
+function customFilter(myfunction, array ){
+    let result = myfunction(array);
+    return result;
+  }
+console.log(customFilter(eligibleToVote,persons));
