@@ -28,5 +28,9 @@ const persons = [
   return resultNames;
   }
   
-  // console.log(persons[0])
-console.log(fullNamesArray(persons));
+  function customMap(myfunction, array ){
+    let result = myfunction(array);
+    return result;
+  }
+// console.log(fullNamesArray(persons));
+console.log(customMap(fullNamesArray, persons));
